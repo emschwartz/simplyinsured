@@ -12,7 +12,7 @@ function nameMatches(doctorName, first, middle, last){
 		return false;
 	if (first != '' && doctorName.indexOf(first) == -1)
 		return false;
-	if (middle != '' && doctorName.indexOf(middle) == -1) 
+	if (middle != '' && doctorName.indexOf(middle.substring(0, 1)) == -1) 
 		return false
 	return true;
 }
